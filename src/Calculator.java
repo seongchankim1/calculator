@@ -12,6 +12,9 @@ public class Calculator {
         }
     }
 
+    public void removeResult() {
+        savedata.remove(0);
+    }
 
 
     public double calculate(int number1, String operator, int number2) throws Exception {
