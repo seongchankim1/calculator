@@ -27,11 +27,21 @@ public class Main {
                 calculator.setSavedata(savedata);
                 System.out.println(savedata);
             }
+
+            System.out.println("최근 결과를 삭제하시겠습니까? 삭제하려면 'y'");
+            String yes2 = scanner.next();
+            if (yes2.equals("y"))
+            {
+                List<String> savedata = calculator.getSavedata();
+                calculator.removeResult();
+                System.out.println(savedata);
+            }
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
             String re = scanner.next();
             if (re.equals("exit"))
             {
-                break;
+                //break;
+                System.out.println("싫습니다.");
             }
         }
 
