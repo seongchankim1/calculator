@@ -4,7 +4,11 @@ import java.util.List;
 
 
 public class Calculator {
-    private List<String> savedata = new ArrayList<>();
+    private List<String> savedata;
+
+    public Calculator() {
+        savedata = new ArrayList<>();
+    }
 
     static class OperatorError extends Exception {
         public OperatorError() {
